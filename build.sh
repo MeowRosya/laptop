@@ -10,7 +10,10 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf install -y tmux adw-gtk3-theme
+dnf install -y tmux adw-gtk3-theme google-noto-fonts-all
+dnf group install --with-optional virtualization
+
+systemctl enable libvirtd
 
 # Use a COPR Example:
 #
