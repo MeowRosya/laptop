@@ -15,6 +15,12 @@ dnf group install -y --with-optional virtualization
 
 systemctl enable libvirtd
 
+cd /tmp
+wget https://li.nux.ro/download/nux/dextop/el7/x86_64/webcore-fonts-3.0-1.noarch.rpm
+wget https://li.nux.ro/download/nux/dextop/el7/x86_64/webcore-fonts-vista-3.0-1.noarch.rpm
+
+dnf install ./webcore-fonts*
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
