@@ -11,9 +11,9 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf install -y tmux adw-gtk3-theme google-noto-fonts-all
-# dnf group install -y --with-optional virtualization
+dnf group install -y --with-optional virtualization
 
-#systemctl enable libvirtd
+systemctl enable libvirtd
 
 cd /tmp
 wget https://li.nux.ro/download/nux/dextop/el7/x86_64/webcore-fonts-3.0-1.noarch.rpm
