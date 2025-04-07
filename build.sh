@@ -10,18 +10,21 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf install -y tmux adw-gtk3-theme
+dnf install -y tmux adw-gtk3-theme google-noto-fonts-all
+dnf group install -y --with-optional virtualization
+dnf install -y ./webcore-fonts*
 dnf install -y steam gamescope telegram-desktop
 
-dnf group install -y --with-optional virtualization
-
-
 cd /tmp
+wget https://li.nux.ro/download/nux/dextop/el7/x86_64/webcore-fonts-3.0-1.noarch.rpm
+wget https://li.nux.ro/download/nux/dextop/el7/x86_64/webcore-fonts-vista-3.0-1.noarch.rpm
+
 wget https://github.com/amnezia-vpn/amnezia-client/releases/download/4.8.5.0/AmneziaVPN_4.8.5.0_linux.tar.zip
 unzip AmneziaVPN_4.8.5.0_linux.tar.zip
 tar xvf AmneziaVPN_4.8.5.0_linux.tar
 cd AmneziaVPN_4.8.5.0_linux
 AmneziaVPN_Linux_Installer.bin install
+
 
 # Use a COPR Example:
 #
@@ -31,5 +34,6 @@ AmneziaVPN_Linux_Installer.bin install
 # dnf5 -y copr disable ublue-os/staging
 
 #### Example for enabling a System Unit File
+systemctl enable libvirtd
 
 systemctl enable podman.socket
