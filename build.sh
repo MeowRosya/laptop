@@ -11,6 +11,17 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf install -y tmux adw-gtk3-theme
+dnf install -y steam gamescope telegram-desktop
+
+dnf group install --with-optional virtualization
+
+
+cd /tmp
+wget https://github.com/amnezia-vpn/amnezia-client/releases/download/4.8.5.0/AmneziaVPN_4.8.5.0_linux.tar.zip
+unzip AmneziaVPN_4.8.5.0_linux.tar.zip
+tar xvf AmneziaVPN_4.8.5.0_linux.tar
+cd AmneziaVPN_4.8.5.0_linux
+AmneziaVPN_Linux_Installer.bin install
 
 # Use a COPR Example:
 #
