@@ -13,7 +13,7 @@ set -ouex pipefail
 dnf install -y tmux adw-gtk3-theme
 dnf install -y steam gamescope telegram-desktop
 
-dnf group install --with-optional virtualization
+dnf group install -y --with-optional virtualization
 
 
 cd /tmp
