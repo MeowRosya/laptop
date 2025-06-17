@@ -32,4 +32,5 @@ dnf5 group install -y --with-optional virtualization
 
 #### Example for enabling a System Unit File
 
+sudo systemctl enable libvirtd
 systemctl enable podman.socket
