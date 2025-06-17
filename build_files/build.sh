@@ -14,13 +14,14 @@ dnf5 remove -y firefox
 
 dnf5 install -y google-noto-fonts-all gnome-tweaks papirus-icon-theme adw-gtk3-theme openssl
 
+dnf5 group install -y --with-optional virtualization
 
 # NIRI
-dnf5 install -y niri xwayland-satellite
+# dnf5 install -y niri xwayland-satellite
 
-dnf5 -y copr enable errornointernet/quickshell
-dnf5 -y install quickshell
-dnf5 -y copr disable errornointernet/quickshell
+# dnf5 -y copr enable errornointernet/quickshell
+# dnf5 -y install quickshell
+# dnf5 -y copr disable errornointernet/quickshell
 
 # Use a COPR Example:
 #
