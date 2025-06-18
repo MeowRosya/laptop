@@ -16,6 +16,8 @@ dnf5 install -y google-noto-fonts-all gnome-tweaks papirus-icon-theme adw-gtk3-t
 
 dnf5 group install -y --with-optional virtualization
 
+dnf5 install -y gamescope
+
 # NIRI
 # dnf5 install -y niri xwayland-satellite
 
