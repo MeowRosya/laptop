@@ -34,5 +34,5 @@ dnf5 install -y gamescope
 
 #### Example for enabling a System Unit File
 
-sudo systemctl enable libvirtd
+# sudo systemctl enable libvirtd
 systemctl enable podman.socket
