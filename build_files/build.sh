@@ -12,7 +12,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 remove -y firefox
 
-dnf5 install -y google-noto-fonts-all gnome-tweaks papirus-icon-theme adw-gtk3-theme openssl
+dnf5 install -y google-noto-fonts-all gnome-tweaks adw-gtk3-theme openssl
 
 # dnf5 group install -y --with-optional virtualization
 
