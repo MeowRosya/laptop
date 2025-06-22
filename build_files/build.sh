@@ -27,9 +27,9 @@ dnf5 install -y niri waybar rofi-wayland network-manager-applet blueman
 # NIRI
 # dnf5 install -y niri xwayland-satellite
 
-dnf5 -y copr enable dnf solopasha/hyprland
+dnf5 -y copr enable solopasha/hyprland
 dnf5 -y install swww
-dnf5 -y copr disable dnf solopasha/hyprland
+dnf5 -y copr disable solopasha/hyprland
 
 # dnf5 -y copr enable errornointernet/quickshell
 # dnf5 -y install quickshell
