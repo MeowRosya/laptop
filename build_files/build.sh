@@ -18,12 +18,18 @@ dnf5 install -y openssl
 
 dnf5 group install -y --with-optional virtualization
 
+dnf5 install -y niri waybar rofi-wayland network-manager-applet blueman
+
 # dnf5 install -y askpass
 
 # dnf5 install -y gamescope
 
 # NIRI
 # dnf5 install -y niri xwayland-satellite
+
+dnf5 -y copr enable dnf solopasha/hyprland
+dnf5 -y install swww
+dnf5 -y copr disable dnf solopasha/hyprland
 
 # dnf5 -y copr enable errornointernet/quickshell
 # dnf5 -y install quickshell
