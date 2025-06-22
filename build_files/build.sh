@@ -16,9 +16,9 @@ dnf5 install -y google-noto-fonts-all gnome-tweaks adw-gtk3-theme
 
 dnf5 install -y openssl
 
-dnf5 install -y askpass
+dnf5 group install -y --with-optional virtualization
 
-# dnf5 group install -y --with-optional virtualization
+# dnf5 install -y askpass
 
 # dnf5 install -y gamescope
 
