@@ -26,6 +26,11 @@ dnf5 -y copr enable scottames/ghostty
 dnf5 -y install ghostty
 dnf5 -y copr disable scottames/ghostty
 
+dnf5 -y copr enable erikreider/SwayNotificationCenter
+# Or latest stable release or -git package
+dnf5 -y install SwayNotificationCenter
+dnf5 -y copr disable erikreider/SwayNotificationCenter
+
 # dnf5 install -y askpass
 
 # dnf5 install -y gamescope
