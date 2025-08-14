@@ -31,7 +31,11 @@ dnf5 -y copr enable erikreider/SwayNotificationCenter
 dnf5 -y install SwayNotificationCenter
 dnf5 -y copr disable erikreider/SwayNotificationCenter
 
-dnf5 install -y ripgrep fd-find fzf lazygit neovim
+dnf5 install -y ripgrep fd-find fzf neovim
+
+dnf5 -y copr enable dejan/lazygit
+dnf5 -y install lazygit
+dnf5 -y copr disable dejan/lazygit
 
 # dnf5 install -y askpass
 
