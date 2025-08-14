@@ -12,13 +12,13 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 remove -y firefox
 
-dnf5 install -y google-noto-fonts-all gnome-tweaks adw-gtk3-theme
+dnf5 install -y google-noto-fonts-all gnome-tweaks
 
 dnf5 install -y openssl
 
 dnf5 group install -y --with-optional virtualization
 
-dnf5 install -y niri waybar rofi-wayland network-manager-applet blueman
+dnf5 install -y niri xwayland-satellite waybar rofi-wayland network-manager-applet blueman
 
 # dnf5 install -y askpass
 
@@ -27,9 +27,9 @@ dnf5 install -y niri waybar rofi-wayland network-manager-applet blueman
 # NIRI
 # dnf5 install -y niri xwayland-satellite
 
-dnf5 -y copr enable solopasha/hyprland
-dnf5 -y install swww
-dnf5 -y copr disable solopasha/hyprland
+# dnf5 -y copr enable solopasha/hyprland
+# dnf5 -y install swww
+# dnf5 -y copr disable solopasha/hyprland
 
 # dnf5 -y copr enable errornointernet/quickshell
 # dnf5 -y install quickshell
