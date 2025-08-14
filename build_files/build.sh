@@ -20,6 +20,10 @@ dnf5 group install -y --with-optional virtualization
 
 dnf5 install -y niri xwayland-satellite waybar rofi-wayland network-manager-applet blueman
 
+dnf5 -y copr enable scottames/ghostty
+dnf5 -y install ghostty
+dnf5 -y copr disable scottames/ghostty
+
 # dnf5 install -y askpass
 
 # dnf5 install -y gamescope
