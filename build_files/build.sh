@@ -13,7 +13,7 @@ set -ouex pipefail
 
 dnf5 remove -y firefox
 
-dnf5 install -y google-noto-fonts-all gtk-murrine-engine sassc
+# dnf5 install -y google-noto-fonts-all
 
 # dnf5 group install -y --with-optional virtualization
 
