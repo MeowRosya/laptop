@@ -14,7 +14,7 @@ set -ouex pipefail
 # use instead firefox via flatpak
 dnf5 remove -y firefox
 
-dnf5 install -y openssl gtk-murrine-engine sassc
+dnf5 install -y openssl gtk-murrine-engine sassc gnome-tweaks
 
 # Use a COPR Example:
 #
