@@ -14,7 +14,7 @@ set -ouex pipefail
 # use instead firefox via flatpak
 dnf5 remove -y firefox
 
-dnf5 install -y openssl gtk-murrine-engine sassc gnome-tweaks
+dnf5 group install -y --with-optional virtualization
 
 # Use a COPR Example:
 #
@@ -27,3 +27,5 @@ dnf5 install -y openssl gtk-murrine-engine sassc gnome-tweaks
 
 # sudo systemctl enable libvirtd
 systemctl enable podman.socket
+
+systemctl enable libvirtd
