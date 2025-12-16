@@ -15,13 +15,6 @@ set -ouex pipefail
 dnf5 remove -y firefox
 
 dnf5 group install -y --with-optional virtualization
-dnf5 update -y @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-dnf5 swap -y ffmpeg-free ffmpeg --allowerasing
-
-dnf5 swap -y mesa-va-drivers mesa-va-drivers-freeworld
-dnf5 swap -y mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
-
-dnf install -y libva-nvidia-driver
 
 # Use a COPR Example:
 #
@@ -34,5 +27,3 @@ dnf install -y libva-nvidia-driver
 
 # sudo systemctl enable libvirtd
 systemctl enable podman.socket
-
-systemctl enable libvirtd
