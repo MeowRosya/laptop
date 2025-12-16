@@ -16,6 +16,8 @@ dnf5 remove -y firefox
 
 dnf5 group install -y --with-optional virtualization
 
+dnf5 install -y steam gamescope
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
