@@ -11,12 +11,8 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 
-# use instead firefox via flatpak
+# use instead firefox flatpak
 dnf5 remove -y firefox
-
-dnf5 group install -y --with-optional virtualization
-
-dnf5 install -y steam gamescope
 
 # Use a COPR Example:
 #
