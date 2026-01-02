@@ -14,6 +14,8 @@ set -ouex pipefail
 # use instead firefox flatpak
 dnf5 remove -y firefox
 
+dnf5 install -y dnscrypt-proxy
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
