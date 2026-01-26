@@ -11,7 +11,7 @@ set -ouex pipefail
 
 # this installs a package from fedora repos 
 
-dnf5 group install --with-optional virtualization
+dnf5 -y group install --with-optional virtualization
 
 # Use a COPR Example:
 #
