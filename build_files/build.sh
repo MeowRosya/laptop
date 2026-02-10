@@ -13,6 +13,8 @@ set -ouex pipefail
 
 dnf5 -y group install --with-optional virtualization
 
+dnf5 -y install libxcb-cursor # fix amnezia vpn work
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
