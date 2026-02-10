@@ -13,7 +13,7 @@ set -ouex pipefail
 
 dnf5 -y group install --with-optional virtualization
 
-dnf5 -y install libxcb-cursor # fix amnezia vpn work
+dnf5 -y install xcb-util-cursor # fix amnezia vpn work
 
 # Use a COPR Example:
 #
