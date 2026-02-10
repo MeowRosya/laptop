@@ -15,6 +15,8 @@ dnf5 -y group install --with-optional virtualization
 
 dnf5 -y install xcb-util-cursor # fix amnezia vpn work
 
+dnf5 -y remove firefox # instead install flathub version
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
