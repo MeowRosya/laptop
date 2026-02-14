@@ -18,6 +18,12 @@ dnf5 -y install adw-gtk3-theme # fix gtk3 with libadwaita
 
 dnf5 -y remove firefox # instead install flathub version
 
+rpm --import https://packages.microsoft.com/keys/microsoft.asc &&
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+
+dnf5 -y check-update && dnf5 -y install code
+
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
