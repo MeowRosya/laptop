@@ -25,6 +25,9 @@ dnf5 -y remove firefox # instead install flathub version
 
 dnf5 -y install code
 
+dnf5 -y install wireshark
+
+
 
 # Use a COPR Example:
 #
