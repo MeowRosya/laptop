@@ -27,7 +27,7 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
 dnf5 -y group install --with-optional virtualization
 
 dnf5 -y install xcb-util-cursor # fix amnezia vpn work
-# dnf5 -y install adw-gtk3-theme # fix gtk3 with libadwaita
+dnf5 -y install adw-gtk3-theme # fix gtk3 with libadwaita
 
 dnf5 -y remove firefox # instead install flathub version
 
@@ -35,7 +35,7 @@ dnf5 -y install code
 
 dnf5 -y install wireshark
 
-dnf5 -y install nextcloud-client nextcloud-client-dolphin nextcloud-client-devel
+dnf5 -y install nextcloud-client nextcloud-client-nautilus nextcloud-client-devel
 
 # Use a COPR Example:
 #
