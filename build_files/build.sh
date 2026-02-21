@@ -35,6 +35,8 @@ dnf5 -y install code
 
 dnf5 -y install wireshark
 
+dnf5 -y install nextcloud-client nextcloud-client-dolphin
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
