@@ -35,7 +35,7 @@ dnf5 -y install code
 
 dnf5 -y install wireshark
 
-dnf5 -y install nextcloud-client nextcloud-client-dolphin
+dnf5 -y install nextcloud-client nextcloud-client-dolphin nextcloud-client-devel
 
 # Use a COPR Example:
 #
