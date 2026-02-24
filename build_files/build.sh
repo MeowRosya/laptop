@@ -33,6 +33,8 @@ dnf5 -y remove firefox # instead install flathub version
 
 dnf5 -y install code
 
+dnf5 -y install steam
+
 #dnf5 -y install wireshark
 
 # dnf5 -y install nextcloud-client nextcloud-client-nautilus nextcloud-client-devel
