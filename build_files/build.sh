@@ -35,6 +35,12 @@ dnf5 -y install code
 
 dnf5 -y install steam
 
+dnf5 -y install curl cabextract xorg-x11-font-utils fontconfig
+
+rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm -y
+
+fc-cache -fv
+
 #dnf5 -y install wireshark
 
 # dnf5 -y install nextcloud-client nextcloud-client-nautilus nextcloud-client-devel
