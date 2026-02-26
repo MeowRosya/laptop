@@ -33,7 +33,7 @@ dnf5 -y remove firefox # instead install flathub version
 
 dnf5 -y install code
 
-dnf5 -y install steam
+# dnf5 -y install steam
 
 dnf5 -y install curl cabextract xorg-x11-font-utils fontconfig
 
