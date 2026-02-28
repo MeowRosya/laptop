@@ -43,8 +43,11 @@ fc-cache -fv
 
 dnf5 -y install wireshark
 
-
 dnf5 -y install niri
+
+dnf5 -y copr enable scottames/ghostty
+dnf5 -y install ghostty
+dnf5 -y copr disable scottames/ghostty
 
 # dnf5 -y install nextcloud-client nextcloud-client-dolphin nextcloud-client-devel
 
