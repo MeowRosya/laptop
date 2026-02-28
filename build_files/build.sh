@@ -49,6 +49,8 @@ dnf5 -y copr enable scottames/ghostty
 dnf5 -y install ghostty
 dnf5 -y copr disable scottames/ghostty
 
+dnf5 -y install network-manager-applet
+
 # dnf5 -y install nextcloud-client nextcloud-client-dolphin nextcloud-client-devel
 
 # ln -s /usr/lib64/nextcloudsync_vfs_suffix.so /usr/lib64/qt6/plugins/nextcloudsync_vfs_suffix.so #fix VFS for nextcloud client on Fedora
