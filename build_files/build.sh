@@ -9,13 +9,13 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# dnf5 -y copr enable deltacopy/darkly 
-# dnf5 -y install darkly
-# dnf5 -y copr disable deltacopy/darkly 
+dnf5 -y copr enable deltacopy/darkly 
+dnf5 -y install darkly
+dnf5 -y copr disable deltacopy/darkly 
 
-# dnf -y copr enable matinlotfali/KDE-Rounded-Corners
-# dnf -y install kwin-effect-roundcorners
-# dnf5 -y copr disable matinlotfali/KDE-Rounded-Corners
+dnf -y copr enable matinlotfali/KDE-Rounded-Corners
+dnf -y install kwin-effect-roundcorners
+dnf5 -y copr disable matinlotfali/KDE-Rounded-Corners
 
 rpm --import https://packages.microsoft.com/keys/microsoft.asc &&
 echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
@@ -41,11 +41,11 @@ rpm --nodigest -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/ms
 
 fc-cache -fv
 
-#dnf5 -y install wireshark
+dnf5 -y install wireshark
 
-# dnf5 -y install nextcloud-client nextcloud-client-nautilus nextcloud-client-devel
+dnf5 -y install nextcloud-client nextcloud-client-dolphin nextcloud-client-devel
 
-# ln -s /usr/lib64/nextcloudsync_vfs_suffix.so /usr/lib64/qt6/plugins/nextcloudsync_vfs_suffix.so #fix VFS for nextcloud client on Fedora
+ln -s /usr/lib64/nextcloudsync_vfs_suffix.so /usr/lib64/qt6/plugins/nextcloudsync_vfs_suffix.so #fix VFS for nextcloud client on Fedora
 
 # Use a COPR Example:
 #
