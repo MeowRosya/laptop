@@ -43,9 +43,9 @@ fc-cache -fv
 
 dnf5 -y install wireshark
 
-dnf5 -y install nextcloud-client nextcloud-client-dolphin nextcloud-client-devel
+# dnf5 -y install nextcloud-client nextcloud-client-dolphin nextcloud-client-devel
 
-ln -s /usr/lib64/nextcloudsync_vfs_suffix.so /usr/lib64/qt6/plugins/nextcloudsync_vfs_suffix.so #fix VFS for nextcloud client on Fedora
+# ln -s /usr/lib64/nextcloudsync_vfs_suffix.so /usr/lib64/qt6/plugins/nextcloudsync_vfs_suffix.so #fix VFS for nextcloud client on Fedora
 
 # Use a COPR Example:
 #
