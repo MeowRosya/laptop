@@ -43,6 +43,8 @@ rpm --nodigest -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/ms
 
 fc-cache -fv
 
+#
+
 dnf5 -y install wireshark
 
 # dnf5 -y install niri
