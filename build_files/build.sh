@@ -24,8 +24,6 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
 
 # this installs a package from fedora repos 
 
-# dnf5 -y install nautilus-python
-
 dnf5 -y group install --with-optional virtualization
 
 dnf5 -y install xcb-util-cursor # fix amnezia vpn work
@@ -35,31 +33,15 @@ dnf5 -y remove firefox # instead install flathub version
 
 dnf5 -y install code
 
-# dnf5 -y install steam
-
 dnf5 -y install curl cabextract xorg-x11-font-utils fontconfig
 
 rpm --nodigest -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 
 fc-cache -fv
 
-#
-
 dnf5 -y install wireshark
 
-dnf5 -y install niri
-
-dnf5 -y install swaybg
-
-dnf5 -y install mate-polkit
-
-# dnf5 -y copr enable scottames/ghostty
-# dnf5 -y install ghostty
-# dnf5 -y copr disable scottames/ghostty
-
 # dnf5 -y install nautilus-python
-
-dnf5 -y install network-manager-applet
 
 # dnf5 -y install nextcloud-client nextcloud-client-dolphin nextcloud-client-devel
 
