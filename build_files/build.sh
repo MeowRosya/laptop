@@ -51,6 +51,8 @@ dnf5 -y install niri
 
 dnf5 -y install swaybg
 
+dnf5 -y install mate-polkit
+
 # dnf5 -y copr enable scottames/ghostty
 # dnf5 -y install ghostty
 # dnf5 -y copr disable scottames/ghostty
